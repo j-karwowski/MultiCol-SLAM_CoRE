@@ -1,4 +1,32 @@
-# !!!!This is an early version of MultiCol-SLAM!!!!
+# MultiCol-SLAM
+
+## What's different to the original repo?
+
+- Dockerized.
+- Fixed build error.
+
+## How to use (Docker)
+
+```bash
+docker build . -t multicolslam
+xhost +local:docker
+docker run -it --env DISPLAY=$DISPLAY --volume /tmp/.X11-unix:/tmp/.X11-unix multicolslam
+
+# Inside docker container
+cd /MultiCol-SLAM/Examples/Lafida
+./multi_col_slam_lafida
+./multi_col_slam_lafida ../small_orb_omni_voc_9_6.yml ./Slam_Settings_indoor1.yaml ./ /indoor_dynamic
+```
+## Does it really work?
+
+Yeah
+
+![](demo.gif)
+
+&nbsp;
+---
+
+> Below is the README for original repo
 
 # MultiCol-SLAM
 **Author**: [Steffen Urban](http://www.ipf.kit.edu/english/staff_urban_steffen.php) (urbste at googlemail.com).
