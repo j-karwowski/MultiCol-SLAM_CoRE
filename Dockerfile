@@ -63,3 +63,8 @@ RUN git clone https://github.com/changh95/MultiCol-SLAM.git &&\
     cd MultiCol-SLAM
 WORKDIR /MultiCol-SLAM
 RUN sh ./build.sh
+
+# Download Lafida dataset
+WORKDIR /
+RUN wget http://www2.ipf.kit.edu/~pcv2016/downloads/indoor_dynamic.zip &&\
+    unzip indoor_dynamic.zip
