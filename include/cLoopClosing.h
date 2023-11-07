@@ -48,7 +48,7 @@ namespace MultiColSLAM
 
 		typedef std::pair<std::set<cMultiKeyFrame*>, int> ConsistentGroup;
 		typedef std::map<cMultiKeyFrame*, g2o::Sim3, std::less<cMultiKeyFrame*>,
-			Eigen::aligned_allocator<std::pair<const cMultiKeyFrame*, g2o::Sim3> > > KeyFrameAndPose;
+			Eigen::aligned_allocator<std::pair<cMultiKeyFrame* const, g2o::Sim3> > > KeyFrameAndPose;
 
 		cLoopClosing(cMap* pMap, cMultiKeyFrameDatabase* pDB, ORBVocabulary* pVoc);
 
