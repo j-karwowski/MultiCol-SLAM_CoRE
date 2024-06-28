@@ -1,5 +1,10 @@
 # MultiCol-SLAM
 
+tldr: Docker launch instructions can be found in [this section](#how-to-use-docker).
+
+This project is built on top of the [`changh95/MultiCol-SLAM`](https://github.com/changh95/MultiCol-SLAM) fork.
+The original README is kept below.
+
 ## What's different to the original repo?
 
 - Dockerized.
